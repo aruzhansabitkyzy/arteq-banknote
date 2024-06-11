@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Detection</title>
+</head>
+<body>
+    <h1>Live Detection Using Webcam</h1>
+    <video width="640" height="480" controls>
+        <source src="{{ url_for('send_video', filename='live_output.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <a href="{{ url_for('index') }}">Go back to Home</a>
+</body>
+</html>
